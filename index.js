@@ -97,7 +97,7 @@ function Gas(runner, options) {
     let gasUsed;
 
     if (!config.provider) {
-      gasUsed = watch.blocks();
+      gasUsed = watch.blocks(test);
     }
 
     if (gasUsed) {
